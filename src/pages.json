@@ -1,15 +1,67 @@
 {
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "推荐"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "热门"
+			}
+		},
+		{
+			"path": "pages/person/person",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+					"pagePath": "pages/index/index",
+					"iconPath": "static/icon/处女座.png",
+					"selectedIconPath": "static/icon/处女座02.png",
+					"text": "首页"
+				},
+				{
+					"pagePath": "pages/home/home",
+					"iconPath": "static/icon/巨蟹座.png",
+					"selectedIconPath": "static/icon/巨蟹座02.png",
+					"text": "推荐"
+				},
+				{
+					"pagePath": "pages/search/search",
+					"iconPath": "static/icon/牡羊座.png",
+					"selectedIconPath": "static/icon/牡羊座02.png",
+					"text": "热门"
+				},
+				{
+					"pagePath": "pages/person/person",
+					"iconPath": "static/icon/金牛座.png",
+					"selectedIconPath": "static/icon/金牛座02.png",
+					"text": "我的"
+				}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "我的小程序",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
